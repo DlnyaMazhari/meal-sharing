@@ -52,10 +52,10 @@ router.put("/:id", async (req, res) => {
     throw error;
   }
 });
-// Deletes the meal by id
+// Deletes the reservation by id
 router.delete("/:id", async (req, res) => {
   try {
-    const deleteReservation = await knex("meal")
+    const deleteReservation = await knex("reservation")
       .where({ id: req.params.id })
       .del();
     res.send(deleteReservation);
