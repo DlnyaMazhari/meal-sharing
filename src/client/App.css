@@ -1,3 +1,209 @@
-* {
-    box-sizing: border-box;
+body {
+  box-sizing: border-box;
+  background-color: rgba(236, 226, 236, 0.671);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(110, 109, 109, 0.3),
+    rgba(104, 102, 102, 0.8)
+  );
+  min-height: 100vh;
+}
+
+.nav {
+  padding: 5px;
+  display: flex;
+  align-content: flex-start;
+  justify-content: space-between;
+}
+
+.HeaderName {
+  margin: 1em;
+  margin-top: 0;
+  font-size: 2em;
+  font-style: italic;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-stretch: expanded;
+  text-shadow: 5px 5px rgba(139, 40, 118, 0.4);
+}
+
+.HeaderRight {
+  display: flex;
+  text-decoration-line: none;
+  margin-right: 4em;
+  margin-top: 2em;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-stretch: expanded;
+}
+
+.link {
+  text-decoration-line: none;
+}
+
+.home-image {
+  width: 60em;
+  height: 30em;
+  border-radius: 8px;
+  opacity: 0.7;
+}
+.home-image:hover {
+  transform: scaleX(-1);
+}
+.home-meals {
+  color: rgb(59, 33, 59);
+  padding-bottom: 5em;
+}
+.home-content {
+  display: flex;
+  align-content: flex-start;
+}
+.meals-fullList {
+  color: rgb(31, 22, 41);
+}
+
+.about {
+  display: flex;
+}
+
+.about-paragraph {
+  color: rgb(75, 35, 73);
+  font: oblique;
+  font-family: fantasy;
+  font-size: larger;
+  padding: 20px;
+  padding-left: 40px;
+  margin-top: 100px;
+}
+
+.about-image {
+  margin-left: 10em;
+  width: 60em;
+  height: 30em;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.meals-page {
+  height: 400px;
+  display: flex;
+}
+.Meals-title {
+  color: rgb(59, 33, 59);
+  margin: 10px;
+  font-size: 50px;
+}
+.meal-links {
+  text-decoration: none;
+  margin: 10px;
+  font-size: larger;
+  color: rgb(83, 30, 83);
+}
+
+.Meals-paragraph {
+  color: rgb(59, 33, 59);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-style: italic;
+  padding-top: 10%;
+  border-radius: 25px;
+  border: 2px solid #4b0e2d;
+  padding: 20px;
+  width: 400px;
+  height: 30px;
+}
+
+.reservingMeal-image {
+  width: 45em;
+  height: 25em;
+  padding-left: 10em;
+  opacity: 0.7;
+}
+
+.mealDetail-form {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px;
+  color: rgb(61, 18, 61);
+}
+.meals-fullList {
+  color: rgb(61, 18, 61);
+}
+.meals-fullList h2 {
+  font-size: 2.5em;
+}
+
+.reservation-form {
+  background-color: rgb(137, 105, 151);
+  margin-top: 80px;
+  margin-right: 50px;
+  border-radius: 25px;
+  border: 2px solid #4b0e2d;
+  padding: 20px;
+  width: 500px;
+  height: 200px;
+}
+
+.reservation-form label {
+  margin-right: 10px;
+  font-size: larger;
+}
+
+.reservation-button {
+  background-color: white;
+  border: 2px solid #441041;
+  margin-top: 10px;
+  padding: 8px 15px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10%;
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.reservation-button:hover {
+  background-color: #8a497f;
+  color: white;
+}
+
+.footer {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  font-size: larger;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-stretch: expanded;
+  color: rgb(59, 33, 59);
+  padding: 2em;
+  text-shadow: 5px 5px rgba(49, 24, 44, 0.1);
+  font-weight: bolder;
+}
+
+.footer-right {
+  display: flex;
+}
+
+.footer-icon {
+  width: 3em;
+  height: 3em;
+  margin-right: 2em;
+  opacity: 0.6;
+  text-align: left;
+}
+
+.socialMedia-icons {
+  display: flex;
+  text-decoration: none;
+  justify-content: right;
+  width: 2em;
+  height: 2em;
+  padding-left: 30px;
+  opacity: 0.8;
+}
+
+.socialMedia-icons :hover {
+  transform: translate(0, -10px);
 }
